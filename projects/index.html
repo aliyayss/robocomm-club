@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Проекты — RoboComm</title>
+  <meta name="description" content="Проекты RoboComm: робототехника, IoT и Computer Vision." />
+
+  <meta property="og:title" content="Проекты — RoboComm" />
+  <meta property="og:description" content="Подборка прототипов и экспериментов RoboComm." />
+  <meta property="og:image" content="../assets/img/og.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml"/>
+  <link rel="icon" href="../assets/icons/favicon.ico"/>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="../">RoboComm</a>
+
+      <nav class="nav" aria-label="Главная навигация">
+        <a href="../projects/">Проекты</a>
+        <a href="../events/">События</a>
+        <a href="../join/">Присоединиться</a>
+        <a href="../about/">О нас</a>
+        <a href="../contact/">Контакты</a>
+      </nav>
+
+      <div class="header__cta">
+        <a class="btn btn--ghost" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn--primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdoDfHb0svXEY7sCwe3FYZhcU8CKsg9YyUPoScQWoVRSNsouA/viewform?usp=dialog" target="_blank" rel="noreferrer">Присоединиться</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h1 class="h2">Проекты</h1>
+        <a class="link" href="../">На главную →</a>
+      </div>
+
+      <p class="muted">
+        Подборка прототипов и экспериментов. По мере готовности добавляйте ссылки на репозитории и демо.
+      </p>
+
+      <div class="cards" style="margin-top:16px;">
+        <article class="card">
+          <div class="card__top">
+            <h3 class="h3">Prototype: Smart Sensor Node</h3>
+            <span class="status">In progress</span>
+          </div>
+          <p class="muted">Модуль датчиков для сбора показаний и отправки данных.</p>
+          <div class="tags">
+            <span class="tag">IoT</span><span class="tag">ESP32</span><span class="tag">Sensors</span><span class="tag">MQTT</span>
+          </div>
+          <div class="card__actions" style="margin-top:12px;">
+            <a class="btn btn--ghost" href="#">Подробнее</a>
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <h3 class="h3">Prototype: Vision Basics Demo</h3>
+            <span class="status">Draft</span>
+          </div>
+          <p class="muted">Базовая обработка изображения и простые детекции для обучения.</p>
+          <div class="tags">
+            <span class="tag">Computer Vision</span><span class="tag">Python</span><span class="tag">OpenCV</span>
+          </div>
+          <div class="card__actions" style="margin-top:12px;">
+            <a class="btn btn--ghost" href="#">Подробнее</a>
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <div class="card__top">
+          <h3 class="h3">Как оформить проект (шаблон)</h3>
+          <span class="status">Checklist</span>
+        </div>
+        <ul class="muted" style="margin:10px 0 0 18px; line-height:1.8;">
+          <li>README: цель, сборка/запуск, как повторить</li>
+          <li>Демо: фото/видео или скриншоты</li>
+          <li>Стек/теги: Robotics / IoT / CV + технологии</li>
+          <li>Next steps: что улучшить дальше</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--footer">RoboComm</div>
+        <p class="muted">STEM-клуб: робототехника, IoT и Computer Vision.</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="../projects/">Проекты</a>
+        <a href="../events/">События</a>
+        <a href="../join/">Присоединиться</a>
+        <a href="../about/">О нас</a>
+        <a href="../contact/">Контакты</a>
+      </div>
+
+      <div class="footer__links">
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+        <a href="#">Email</a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span class="muted">© <span id="year"></span> RoboComm. Built on GitHub Pages.</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

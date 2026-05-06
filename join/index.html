@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Присоединиться — RoboComm</title>
+  <meta name="description" content="Как присоединиться к RoboComm: шаги, форматы участия и ссылка на заявку." />
+
+  <meta property="og:title" content="Присоединиться — RoboComm" />
+  <meta property="og:description" content="Оставьте заявку и получите ближайшие даты и стартовые материалы." />
+  <meta property="og:image" content="../assets/img/og.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml"/>
+  <link rel="icon" href="../assets/icons/favicon.ico"/>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="../">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="70" height="44"
+          aria-label="RoboComm" role="img">
+          <style>
+            .rc-tr  { fill:none; stroke:#05e8e8; stroke-width:2.5; stroke-linecap:square; stroke-linejoin:miter; }
+            .rc-nd  { fill:#05e8e8; }
+            .rc-ndp { fill:#05e8e8; animation:rc-ndp 2.4s ease-in-out infinite; }
+            .rc-sig { fill:none; stroke:#05e8e8; stroke-width:2.2; stroke-linecap:round; opacity:0; animation:rc-sig 3s ease-out infinite; }
+            .rc-fl  { fill:none; stroke:rgba(190,252,255,.9); stroke-width:2.5; stroke-linecap:round; animation:rc-fl 1.8s linear infinite; }
+            @keyframes rc-ndp { 0%,100%{opacity:1} 50%{opacity:.3} }
+            @keyframes rc-sig  { 0%{opacity:0} 20%{opacity:1} 80%{opacity:.5} 100%{opacity:0} }
+            @keyframes rc-fl   { from{stroke-dashoffset:240} to{stroke-dashoffset:0} }
+          </style>
+
+          <!-- ── Letter R ── -->
+          <line class="rc-tr" x1="20" y1="18" x2="20" y2="82"/>
+          <line class="rc-tr" x1="20" y1="18" x2="50" y2="18"/>
+          <line class="rc-tr" x1="50" y1="18" x2="50" y2="50"/>
+          <line class="rc-tr" x1="20" y1="50" x2="50" y2="50"/>
+          <polyline class="rc-tr" points="50,50 58,82"/>
+          <polyline class="rc-tr" points="20,18 10,18 10,10"/>
+          <line class="rc-tr" x1="58" y1="82" x2="66" y2="82"/>
+
+          <!-- ── Letter C ── -->
+          <line class="rc-tr" x1="112" y1="18" x2="80" y2="18"/>
+          <line class="rc-tr" x1="80"  y1="18" x2="80" y2="82"/>
+          <line class="rc-tr" x1="80"  y1="82" x2="112" y2="82"/>
+          <!-- PCB terminators on C -->
+          <polyline class="rc-tr" points="112,18 122,18 122,10"/>
+          <polyline class="rc-tr" points="112,82 122,82 122,90"/>
+
+          <!-- ── Current flow on R ── -->
+          <line class="rc-fl" x1="20" y1="82" x2="20" y2="18" stroke-dasharray="14 240"/>
+          <line class="rc-fl" x1="20" y1="18" x2="50" y2="18" stroke-dasharray="10 240" style="animation-delay:.25s"/>
+          <line class="rc-fl" x1="50" y1="18" x2="50" y2="50" stroke-dasharray="10 240" style="animation-delay:.5s"/>
+          <line class="rc-fl" x1="50" y1="50" x2="20" y2="50" stroke-dasharray="10 240" style="animation-delay:.75s"/>
+          <polyline class="rc-fl" points="50,50 58,82" stroke-dasharray="12 240" style="animation-delay:1s"/>
+
+          <!-- ── Current flow on C ── -->
+          <line class="rc-fl" x1="112" y1="18" x2="80" y2="18" stroke-dasharray="10 240" style="animation-delay:.4s"/>
+          <line class="rc-fl" x1="80"  y1="18" x2="80" y2="82" stroke-dasharray="14 240" style="animation-delay:.8s"/>
+          <line class="rc-fl" x1="80"  y1="82" x2="112" y2="82" stroke-dasharray="10 240" style="animation-delay:1.2s"/>
+
+          <!-- ── Nodes on R ── -->
+          <circle class="rc-ndp" cx="20" cy="18" r="3.5"/>
+          <circle class="rc-ndp" cx="50" cy="18" r="3.5" style="animation-delay:.6s"/>
+          <circle class="rc-ndp" cx="20" cy="50" r="3"   style="animation-delay:1.2s"/>
+          <circle class="rc-ndp" cx="50" cy="50" r="3.5" style="animation-delay:.9s"/>
+          <circle class="rc-ndp" cx="20" cy="82" r="3"   style="animation-delay:1.8s"/>
+          <circle class="rc-ndp" cx="58" cy="82" r="3"   style="animation-delay:1.5s"/>
+          <circle class="rc-nd"  cx="10" cy="10" r="2.5"/>
+          <circle class="rc-nd"  cx="66" cy="82" r="2"/>
+
+          <!-- ── Nodes on C ── -->
+          <circle class="rc-ndp" cx="80"  cy="18" r="3.5" style="animation-delay:.3s"/>
+          <circle class="rc-ndp" cx="112" cy="18" r="3"   style="animation-delay:.9s"/>
+          <circle class="rc-ndp" cx="80"  cy="82" r="3.5" style="animation-delay:1.5s"/>
+          <circle class="rc-ndp" cx="112" cy="82" r="3"   style="animation-delay:.6s"/>
+          <circle class="rc-nd"  cx="122" cy="10" r="2.5"/>
+          <circle class="rc-nd"  cx="122" cy="90" r="2.5"/>
+
+          <!-- ── Signal arcs (right side of C) ── -->
+          <path class="rc-sig" d="M118,36 A16,16 0 0,1 118,64" style="animation-delay:0s"/>
+          <path class="rc-sig" d="M126,26 A26,26 0 0,1 126,74" style="animation-delay:.9s"/>
+          <path class="rc-sig" d="M134,16 A36,36 0 0,1 134,84" style="animation-delay:1.8s"/>
+        </svg>
+      </a>
+
+      <nav class="nav" aria-label="Главная навигация">
+        <a href="../projects/">Проекты</a>
+        <a href="../events/">События</a>
+        <a href="../join/">Присоединиться</a>
+        <a href="../about/">О нас</a>
+        <a href="../contact/">Контакты</a>
+      </nav>
+
+      <div class="header__cta">
+        <a class="btn btn--ghost" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn--primary"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdoDfHb0svXEY7sCwe3FYZhcU8CKsg9YyUPoScQWoVRSNsouA/viewform?usp=dialog"
+          target="_blank" rel="noreferrer">Присоединиться</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h1 class="h2">Присоединиться</h1>
+        <a class="link" href="../">На главную →</a>
+      </div>
+
+      <p class="muted">
+        RoboComm открыт для участников разного уровня. Если вы новичок — это нормально: мы подберём стартовую задачу.
+        Если у вас есть опыт — можно подключаться к проектам или помогать как ментор/партнёр.
+      </p>
+
+      <div class="cards" style="margin-top:16px;">
+        <article class="card">
+          <div class="card__top">
+            <h3 class="h3">Кому подойдёт</h3>
+            <span class="status">Любой уровень</span>
+          </div>
+          <ul class="muted" style="margin:10px 0 0 18px; line-height:1.8;">
+            <li>Новичкам: хотите понять базу и сделать первый проект.</li>
+            <li>Продолжающим: хотите собрать портфолио и “прокачать” практику.</li>
+            <li>Наставникам: готовы помогать с задачами, ревью и демо.</li>
+            <li>Партнёрам: интересны совместные воркшопы или проектные мини-кейсы.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <h3 class="h3">Как это работает</h3>
+            <span class="status">4 шага</span>
+          </div>
+          <ol class="muted" style="margin:10px 0 0 18px; line-height:1.8;">
+            <li>Оставляете заявку: направление и интерес.</li>
+            <li>Получаете ответ: ближайшие даты и формат участия.</li>
+            <li>Вводная встреча: подбираем уровень и первую задачу.</li>
+            <li>Старт: подключаетесь к проекту и делаете первый “маленький PR”.</li>
+          </ol>
+        </article>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <div class="card__top">
+          <h3 class="h3">Заявка</h3>
+          <span class="status">2 минуты</span>
+        </div>
+        <p class="muted">
+          Нажмите кнопку ниже и заполните короткую форму. Мы свяжемся и пришлём ближайшие даты и стартовые материалы.
+        </p>
+        <div style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn btn--primary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdoDfHb0svXEY7sCwe3FYZhcU8CKsg9YyUPoScQWoVRSNsouA/viewform?usp=dialog"
+            target="_blank" rel="noreferrer">Заполнить заявку</a>
+          <a class="btn btn--ghost" href="../contact/">Задать вопрос</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--footer">RoboComm</div>
+        <p class="muted">STEM-клуб: робототехника, IoT и Computer Vision.</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="../projects/">Проекты</a>
+        <a href="../events/">События</a>
+        <a href="../join/">Присоединиться</a>
+        <a href="../about/">О нас</a>
+        <a href="../contact/">Контакты</a>
+      </div>
+
+      <div class="footer__links">
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+        <a href="#">Email</a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span class="muted">© <span id="year"></span> RoboComm. Built on GitHub Pages.</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
